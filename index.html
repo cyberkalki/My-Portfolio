@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Serif+Devanagari:wght@400;700&display=swap">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta property="og:title" content="Page Tile" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:description" content="Personal Site" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900" rel="stylesheet">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="icon" href="images/favicon.png">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            /* width: 100vw; */
+            height: 100%;
+            /* background-color:red ; */
+        }
+
+        .preloaderContainer {
+            width: 100%;
+            height: 100%;
+            position: relative;
+            background-color: #121212;
+            display: block;
+            animation: out forwards ease-in 2.5s;
+            z-index: 7;
+        }
+
+        .leftCircle,
+        .rightCircle {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+            background-color: #1abc9c;
+            transition: all 2s ease-in-out;
+            display: block;
+        }
+
+        @keyframes out {
+            0% {
+                display: block;
+            }
+            50% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+                display: none;
+            }
+        }
+
+        .leftCircle {
+            top: 50%;
+            left: -3.5%;
+            transform: translate(0, -50%);
+            animation: moveAndScale1 2s ease-in forwards infinite;
+            z-index: 2;
+        }
+
+        .rightCircle {
+            top: 50%;
+            right: -3.5%;
+            transform: translate(0, -50%);
+            animation: moveAndScale2 2s ease-in forwards infinite;
+            z-index: 1;
+        }
+
+        ::-webkit-scrollbar {
+            display: none;
+        }
+
+        @keyframes moveAndScale1 {
+            0% {
+                left: -3.5%;
+                transform: translate(0, -50%) scale(1);
+            }
+            35% {
+                left: 50%;
+                transform: translate(-50%, -50%) scale(1);
+            }
+            80% {
+                left: 50%;
+                transform: translate(-50%, -50%) scale(100);
+            }
+            100% {
+                left: -3.5%;
+                transform: translate(-50%, -50%) scale(100);
+                /* display: none;   */
+            }
+        }
+
+        @keyframes moveAndScale2 {
+            0% {
+                right: -3.5%;
+                transform: translate(0, -50%) scale(1);
+            }
+            35% {
+                right: 50%;
+                transform: translate(50%, -50%) scale(1);
+            }
+            49% {
+                background-color: #121212;
+            }
+            50% {
+                right: 50%;
+                transform: translate(50%, -50%) scale(0);
+                background-color: #1abc9c;
+            }
+            90% {
+                background-color: #1abc9c;
+                right: 50%;
+                transform: translate(50%, -50%) scale(100);
+                z-index: 3;
+            }
+            100% {
+                background-color: #1abc9c;
+                right: -3.5%;
+                transform: translate(50%, -50%) scale(100);
+                z-index: 3;
+                display: none;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="css/owl.carousel.min.css">
+    <link rel="stylesheet" href="css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="css/magnific-popup.css">
+    <link rel="stylesheet" href="css/aos.css">
+    <link rel="stylesheet" href="css/flaticon.css">
+    <link rel="stylesheet" href="css/icomoon.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body data-spy="scroll" data-target=".site-navbar-target" data-offset="300">
+
+    <div class="preloaderContainer">
+        <div class="leftCircle"></div>
+        <div class="rightCircle"></div>
+    </div>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark ftco_navbar ftco-navbar-light site-navbar-target" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Barenkala Bhuvan Subramanyam</a>
+            <button class="navbar-toggler js-fh5co-nav-toggle fh5co-nav-toggle" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="oi oi-menu"></span> Menu
+			</button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav nav ml-auto">
+                    <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
+                    <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
+                    <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Education</span></a></li>
+                    <li class="nav-item"><a href="#project-section" class="nav-link"><span>Projects</span></a></li>
+                    <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- particles -->
+    <div id="particles-js"></div>
+    <section class="hero-wrap js-fullheight">
+        <div class="container">
+            <div class="row no-gutters slider-text js-fullheight justify-content-center align-items-center">
+                <div class="col-lg-8 col-md-6 ftco-animate d-flex align-items-center">
+                    <div class="text text-center">
+                        <span class="subheading">Hey👋! I am</span>
+                        <h1>Bhuvan Subramanyam</h1>
+                        <h2>I like
+                            <span class="txt-rotate" data-period="2000" data-rotate='[ "Penetration Testing.", "CTF Player.", "Malware Testing.","Web development.", "spirituality."]'></span>
+                        </h2>
+                    </div>
+                </div>
+            </div>
+            <div class="scrollDown">
+            </div>
+        </div>
+        </div>
+        </button>
+        <div class="glyphicon glyphicon-arrow-down"></div>
+    </section>
+
+    <section class="ftco-about img ftco-section ftco-no-pt ftco-no-pb" id="about-section">
+        <div class="container">
+            <div class="row d-flex no-gutters">
+                <div class="col-md-6 col-lg-6 d-flex">
+                    <div class="img-about img d-flex align-items-stretch">
+                        <div class="overlay"></div>
+                        <div class="img d-flex align-self-stretch align-items-center" style="background-image:url(images/about.jpg);"></div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 pl-md-5 py-5">
+                    <div class="row justify-content-start pb-3">
+                        <div class="col-md-12 heading-section ftco-animate">
+                            <h2 class="mb-4">About Me</h2>
+                            <p>Here's a little about me</p>
+                            <ul class="about-info mt-4 px-md-0 px-2">
+                                <li class="d-flex"><span>Name:</span><span>Bhuvan Subramanyam</span></li>
+                                <li class="d-flex"><span>Email:</span><span>bhuvans.barenkala@gmail.com</span></li>
+                                <li class="d-flex"><span>Phone:</span><span>+91 93986 04903</a></span></li>
+                                <li class="d-flex"><span>Country:</span><span>India</span></li>
+                                <li class="d-flex"><span>City:</span><span>Bangalore</span></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="counter-wrap ftco-animate d-flex mt-md-3">
+                        <div class="Resume">
+                            <p> <a href="https://drive.google.com/file/d/1fS7mpjjQF59_eZFa-aWAKiYOMBxDduSm/view?usp=sharing" download class="btn btn-primary py-3 px-3"> Resume </a> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ftco-section ftco-no-pb goto-here" id="resume-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <nav id="navi">
+                        <ul>
+                            <li><a href="#page-1">Education</a></li>
+                            <li><a href="#page-2">Experience</a></li>
+                            <li><a href="#page-3">Skills</a></li>
+                            <li><a href="#page-4">Awards</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-md-9">
+                    <div id="page-1" class="page one">
+                        <h2 class="heading">Education</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fas fa-graduation-cap"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <h2>GITAM University</h2>
+                                <span class="position">Bachelor of Technology</span>
+                                <p><strong>Computer Science Engineering Cyber Security</strong></p>
+                                <p>Doddaballapura, Karnataka</p>
+                                <span class="date">2021-2025</span>
+                            </div>
+                        </div>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fas fa-book"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <h2>Sri Chaitanya Jr School</h2>
+                                <span class="position">Intermediate</span>
+                                <p><strong>Maths Physics Chemistry</strong></p>
+                                <p>Vijayawada, Andhra Pradesh</p>
+                                <span class="date">2019-2021</span>
+                            </div>
+                        </div>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fas fa-school"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <h2>Sri Chaitanya Techno School</h2>
+                                <span class="position">SSC</span>
+                                <p><strong>Mathematics-Science</strong></p>
+                                <p>Anantapur, Andhra Pradesh</p>
+                                <span class="date">2012-2019</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="page-2" class="page two">
+                        <h2 class="heading">Experience</h2>
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fas fa-suitcase"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <h2>Intern</h2>
+                                <span class="position">Octanet</span>
+                                <p class="date">Nov 2023 - Jan 2024</p>
+                                <ul>
+                                    <li>An beginner friendly Experience with two projects for the better understanding of the niche.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        
+                    </div>
+                    <div id="page-3" class="page three">
+                        <h2 class="heading">Skills</h2>
+                        <!-- Skill Section -->
+                        <div class="row mb-4 ftco-animate">
+                            <div class="col grow"><img class="img-fluid" src="images/skills/python.png" title="Python" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/linux.png" title="Linux" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/html.png" title="HTML" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/css.png" title="CSS" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/java-script.png" title="JavaScript" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/owasp.png" title="OWASP" style="width: 70px; height: 75px;"></div>
+                        </div>
+                        
+                        <div class="row mb-4 ftco-animate">
+                            <div class="col grow"><img class="img-fluid" src="images/skills/osint.png" title="OSINT" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/nmap.png" title="Nmap" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/msf.png" title="Metasploit" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/burp-suite.png" title="Burp Suite" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/wireshark.png" title="Wireshark" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/hydra.png" title="Hydra" style="width: 70px; height: 75px;"></div>
+                        </div>
+                        
+                        <div class="row mb-4 ftco-animate">
+                            <div class="col grow"><img class="img-fluid" src="images/skills/john.png" title="John the Ripper" style="width: 64px; height: 64px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/nesssus.png" title="Nessus" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/air-crack.png" title="Aircrack-ng" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/forensics.png" title="Forensics" style="width: 70px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/steganography.png" title="Steganography" style="width: 75px; height: 75px;"></div>
+                            <div class="col grow"><img class="img-fluid" src="images/skills/cryptography.png" title="Cryptography" style="width: 70px; height: 75px;"></div>
+                        </div>
+                        
+
+                        
+
+
+                    </div>
+                    <div id="page-4" class="page four">
+                        <h2 class="heading">Awards</h2>
+
+                        <div class="resume-wrap d-flex ftco-animate">
+                            <div class="icon d-flex align-items-center justify-content-center">
+                                <span class="fas fa-award"></span>
+                            </div>
+                            <div class="text pl-3">
+                                <h2>Shore Fest 2024</h2>
+                                <span class="position"><strong>Gitam University</strong></span>
+                                <span><strong>Runner Up</strong></span>
+                                <p class="date">Feb 2024</p>
+                                <p>Vizag-ANDHRA PRADESH</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="ftco-section" id="project-section">
+        <div class="container-fluid px-md-5">
+            <div class="row justify-content-center py-5 mt-5">
+                <div class="col-md-12 heading-section text-center ftco-animate">
+                    <h2 class="mb-4">Projects</h2>
+                </div>
+            </div>
+                <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+                    <a href="" target="_blank" class="services-1 shadow">
+                        <span class="icon">
+                            <i class="fas fa-microphone-alt"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-4">Voice over IP (VoIP)</h3>
+                            <p><strong>AWS</strong> • <strong>3CX</strong></p>
+                            <p>Implementing VoIP using AWS cloud infrastructure and 3CX VoIP phone system.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+                    <a href="" target="_blank" class="services-1 shadow">
+                        <span class="icon">
+                            <i class="fas fa-network-wired"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-4">NAT Service</h3>
+                            <p>Implementing Network Address Translation for seamless communication using Raspberry pi zero 2w.</p>
+                        </div>
+                    </a>
+                </div>
+                
+                <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+                    <a href="https://art-of-secrecy.vercel.app/" target="_blank" class="services-1 shadow">
+                        <span class="icon">
+                            <i class="fab fa-lock"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-4">Hashes and Stegnography</h3>
+                            <p><strong>HTML • CSS • JavaScript</strong></p>
+                            <p>Web application that provides functionalities for both hashing and steganography.</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-md-4 text-center d-flex mx-auto ftco-animate">
+                    <a href="" target="_blank" class="services-1 shadow">
+                        <span class="icon">
+                            <i class="fas fa-file-alt"></i>
+                        </span>
+                        <div class="desc">
+                            <h3 class="mb-4">Resume Maker</h3>
+                            <p>Developed for company perspective</p>
+                            <p>A web-based tool for creating professional resumes tailored to company requirements.</p>
+                        </div>
+                    </a>
+                </div>
+            
+        </div>
+        </div>
+        </div>
+    </section>
+
+    <section class="ftco-section contact-section ftco-no-pb" id="contact-section">
+        <div class="container">
+            <div class="row justify-content-center mb-4 pb-3">
+                <div class="col-md-7 heading-section text-center ftco-animate">
+                    <h2 class="mb-4">Contact Me</h2>
+                </div>
+            </div>
+
+            <div class="row d-flex justify-content-center contact-info mb-5">
+                <div class="col-md-6 col-lg-3 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-phone-alt"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Contact Number</h3>
+                            <p><a>+91 93986 04903</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4 d-flex ftco-animate">
+                    <div class="align-self-stretch box text-center p-4 shadow">
+                        <div class="icon d-flex align-items-center justify-content-center">
+                            <span class="fas fa-envelope"></span>
+                        </div>
+                        <div>
+                            <h3 class="mb-4">Email Address</h3>
+                            <p><a href="mailto:bhuvans.barenkala@gmail.com">bhuvans.barenkala@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="row no-gutters block-9">
+                <div class="col-md-6 order-md-last d-flex">
+                    <form method="POST" action="https://api.web3forms.com/submit" class="bg-light p-4 p-md-5 contact-form" id="contactForm">
+                        <div>
+                            <input type="hidden" name="access_key" value="5fe720e6-03fc-4150-85a6-af28f8720050">
+                        </div>
+            
+                        <!-- Honeypot Spam Protection -->
+                        <div style="display: none;">
+                            <input type="checkbox" name="botcheck" class="hidden">
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="" cols="30" rows="7" class="form-control" name="message" placeholder="Message" required></textarea>
+                        </div>
+            
+                        <div class="form-group">
+                            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
+                        </div>
+                    </form>
+                </div>
+            
+                <div class="col-md-6 d-flex">
+                    <div class="img" style="background-image: url(images/about.jpg);"></div>
+                </div>
+            </div>
+
+            <script>
+                document.getElementById('contactForm').addEventListener('submit', function(event) {
+                    event.preventDefault();
+                    const form = event.target;
+            
+                    // Perform the actual form submission
+                    fetch(form.action, {
+                        method: form.method,
+                        body: new FormData(form)
+                    }).then(response => {
+                        if (response.ok) {
+                            form.reset(); 
+                            alert('Your message has been sent successfully!');
+                        } else {
+                            alert('There was an issue submitting your form.');
+                        }
+                    }).catch(error => {
+                        console.error('Form submission error:', error);
+                        alert('There was an error submitting your form.');
+                    });
+                });
+            </script>
+        </div>
+    </section>
+
+
+    <footer class="ftco-footer ftco-section">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">About</h2>
+                        <p>I like working with new tools and technologies</p>
+                        <p class="mt-4"><u>Social Links</u></p>
+                        <ul class="ftco-footer-social list-unstyled float-md-left float-lft">
+                            <li class="ftco-animate"><a href="https://github.com/cyber5kalki" target="_blank"><span class="fab fa-github"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.linkedin.com/in/bhuvan-subramanyam-barenkala-406147255/" target="_blank"><span class="fab fa-linkedin"></span></a></li>
+                            <li class="ftco-animate"><a href="https://www.instagram.com/script_kiddie.exe" target="_blank"><span class="fab fa-instagram"></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+                               
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2">Links</h2>
+                        <ul class="list-unstyled">
+                            <li><a href="#home-section"><span class="fas fa-home mr-2"></span>Home</a></li>
+                            <li><a href="#about-section"><span class="fas fa-user mr-2"></span>About</a></li>
+                            <li><a href="#resume-section"><span class="fas fa-book mr-2"></span>Education</a></li>
+                            <li><a href="#project-section"><span class="fas fa-briefcase mr-2"></span>Projects</a></li>
+                            <li><a href="#contact-section"><span class="fas fa-envelope mr-2"></span>Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2">Have a Question?</h2>
+                        <div class="block-23 mb-3">
+                            <ul>
+                                <li>
+                                    <a class="d-flex">
+                                        <span class="fas fa-phone-alt mr-2"></span>
+                                        <span class="text"> +91 93986 04903</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:bhuvans.barenkala@gmail.com" class="d-flex">
+                                        <span class="fas fa-envelope mr-2"></span>
+                                        <span class="text">bhuvans.barenkala@gmail.com</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p><span id="year"></span> &copy; Bhuvan Subramanyam. All Rights Reserved.</span></p>
+                    <script>
+                        document.getElementById('year').textContent = new Date().getFullYear();
+                    </script>
+                </div>
+                
+            </div>
+        </div>
+    </footer>
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px">
+			<circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" />
+			<circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10"
+				stroke="#F96D00" />
+		</svg></div>
+
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/scrollax.min.js"></script>
+    <script src="js/particles.min.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/main.js"></script>
+</body>
