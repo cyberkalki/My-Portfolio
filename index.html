@@ -533,19 +533,19 @@
                 </div>
             </div>
             
+            
             <script>
                 document.getElementById('contactForm').addEventListener('submit', function(event) {
                     event.preventDefault(); // Prevent the default form submission
                     const form = event.target;
-            
-                    // Fetch API to submit the form data
+
+    // Fetch API to submit the form data
                     fetch(form.action, {
                         method: form.method,
                         headers: {
-                            'Accept': 'application/json',
-                            'Content-Type': 'application/json'
+                            'Accept': 'application/json'
                         },
-                        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+                        body: new FormData(form) // Send as form data, not JSON
                     })
                     .then(response => {
                         if (response.ok) {
@@ -561,14 +561,13 @@
                         } else {
                             alert('There was an issue submitting your form: ' + data.message);
                         }
-                    })
-                    .catch(error => {
-                        console.error('Form submission error:', error);
-                        alert('There was an error submitting your form: ' + error.message);
-                    });
+                })
+                .catch(error => {
+                console.error('Form submission error:', error);
+                alert('There was an error submitting your form: ' + error.message);
                 });
+            });
             </script>
-            
         </div>
     </section>
 
