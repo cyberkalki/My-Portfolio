@@ -532,29 +532,43 @@
                     <div class="img" style="background-image: url(images/about.jpg);"></div>
                 </div>
             </div>
-
+            
             <script>
                 document.getElementById('contactForm').addEventListener('submit', function(event) {
-                    event.preventDefault();
+                    event.preventDefault(); // Prevent the default form submission
                     const form = event.target;
             
-                    // Perform the actual form submission
+                    // Fetch API to submit the form data
                     fetch(form.action, {
                         method: form.method,
-                        body: new FormData(form)
-                    }).then(response => {
+                        headers: {
+                            'Accept': 'application/json',
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(Object.fromEntries(new FormData(form)))
+                    })
+                    .then(response => {
                         if (response.ok) {
-                            form.reset(); 
+                            return response.json();
+                        } else {
+                            throw new Error('Network response was not ok.');
+                        }
+                    })
+                    .then(data => {
+                        if (data.success) {
+                            form.reset(); // Reset the form fields
                             alert('Your message has been sent successfully!');
                         } else {
-                            alert('There was an issue submitting your form.');
+                            alert('There was an issue submitting your form: ' + data.message);
                         }
-                    }).catch(error => {
+                    })
+                    .catch(error => {
                         console.error('Form submission error:', error);
-                        alert('There was an error submitting your form.');
+                        alert('There was an error submitting your form: ' + error.message);
                     });
                 });
             </script>
+            
         </div>
     </section>
 
