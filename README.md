@@ -30,7 +30,7 @@ Here's a professional and well-structured **README** description for your GitHub
 
 ### 📫 **Let's Connect!**  
 - 🐙 **GitHub**: [github.com/cyberkalki](https://github.com/cyberkalki)  
-- 💼 **LinkedIn**: (Add your LinkedIn link if available)  
+- 💼 **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bhuvan-blue?logo=linkedin)](https://www.linkedin.com/in/bhuvan-subramanyam-barenkala/)
 
 🔹 *Always eager to learn, build, and secure the digital world!*  
 
