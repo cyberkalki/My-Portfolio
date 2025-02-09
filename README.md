@@ -29,7 +29,7 @@ Here's a professional and well-structured **README** description for your GitHub
 🔹 **NAS Storage & VoIP Solutions** – Cloud-based network security projects  
 
 ### 📫 **Let's Connect!**  
-- 🐙 **GitHub**: [github.com/cyberkalki](https://github.com/cyberkalki)  
+- 🐙 **GitHub**: [![GitHub](https://img.shields.io/badge/GitHub-CyberKalki-black?logo=github)](https://github.com/cyberkalki)    
 - 💼 **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bhuvan-blue?logo=linkedin)](https://www.linkedin.com/in/bhuvan-subramanyam-barenkala/)
 
 🔹 *Always eager to learn, build, and secure the digital world!*  
