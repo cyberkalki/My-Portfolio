@@ -1,7 +1,6 @@
-﻿# My-Portfolio
-Here's a professional and well-structured **README** description for your GitHub profile:  
+👋 Hi, I'm Bhuvan Subramanyam Barenkala!
 
----
+🚀 Cybersecurity Enthusiast | Ethical Hacker | Automation Engineer
 
 ## 🚀 About Me  
 
@@ -33,7 +32,3 @@ Here's a professional and well-structured **README** description for your GitHub
 - 💼 **LinkedIn**: [![LinkedIn](https://img.shields.io/badge/LinkedIn-Bhuvan-blue?logo=linkedin)](https://www.linkedin.com/in/bhuvan-subramanyam-barenkala/)
 
 🔹 *Always eager to learn, build, and secure the digital world!*  
-
----
-
-Let me know if you'd like any modifications! 🚀
